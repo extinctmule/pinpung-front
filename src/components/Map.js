@@ -25,8 +25,8 @@ const Map = () => {
     loadKakaoMapScript()
       .then(() => {
         kakao.maps.load(() => {
-          const container = document.getElementById("map");
-          //const container = mapRef.current;
+          //const container = document.getElementById("map");
+          const container = mapRef.current;
           const options = {
             center: new kakao.maps.LatLng(33.450701, 126.570667),
             level: 3,
