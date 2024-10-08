@@ -28,8 +28,8 @@ const Map = () => {
           //const container = document.getElementById("map");
           const container = mapRef.current;
           const options = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667),
-            level: 3,
+            center: new kakao.maps.LatLng(37.400113, 127.106766),
+            level: 1,
           };
           const map = new kakao.maps.Map(container, options);
         });
