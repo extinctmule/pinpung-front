@@ -1,26 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import HomeIcon from "../assets/icons/home.svg";
+import LocationIcon from "../assets/icons/location.svg";
+import AddIcon from "../assets/icons/add.svg";
+import BookmarkIcon from "../assets/icons/bookmark.svg";
+import ProfileIcon from "../assets/icons/profile.svg";
 
 const NavBar = () => {
   return (
     <Nav>
       <Menu>
         <li>
-          <IconLink to="/">🏠</IconLink>
+          <IconLink to="/">
+            <img src={HomeIcon} alt="Home" />
+          </IconLink>
         </li>
         <li>
-          <IconLink to="/map">📍</IconLink>
+          <IconLink to="/location">
+            <img src={LocationIcon} alt="Location" />
+          </IconLink>
         </li>
         <li>
-          <IconLink to="/add-pung">➕</IconLink>
+          <IconLink to="/add-pung">
+            <img src={AddIcon} alt="Add" />
+          </IconLink>
         </li>
-        <li>
-          <IconLink to="/bookmark">📑</IconLink>
-        </li>
-        <li>
-          <IconLink to="/profile">👤</IconLink>
-        </li>
+        <IconLink to="/bookmark">
+          <img src={BookmarkIcon} alt="Bookmark" />
+        </IconLink>
+        <IconLink to="/profile">
+          <img src={ProfileIcon} alt="profile" />
+        </IconLink>
       </Menu>
     </Nav>
   );
@@ -30,7 +41,7 @@ const Nav = styled.nav`
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 8%;
   background-color: white;
   display: flex;
   justify-content: center;
